@@ -14,4 +14,18 @@ menu.onclick = () => {
 window.onscroll = () => {
 	menu.classList.remove('bx-x');
 	navlist.classList.remove('open');
+};
+
+function SendEmail(){
+	Email.send({
+Host : "smtp.elasticemail.com",
+Username : "asaln8592@gmail.com",
+Password : "asheerna",
+To : 'asaln4825@gmail.com',
+From : document.getElementById("email").value,
+Subject : "New contact FRom Enquiry",
+Body : "And this is the body"
+}).then(
+message => alert(message)
+);
 }

@@ -24,20 +24,6 @@ body{
 
 }
 header{
-	 /* position: fixed;
-	width: 100%;
-	top: 0;
-	right: 0;
-	z-index: 1000;
-	display: flex;
-	align-items:center;
-	justify-content: space-between;
-	background: transparent;
-	padding-top: 22px;
-	padding-left:700px ;
-	
-	border-bottom: 1px solid transparent;
-	transition: all .45s ease;  */
 
 	position: fixed;
 	width: 100%;
@@ -54,17 +40,7 @@ header{
 	 
 }
 
-/* header.sticky{
-	/* background: var(--bg-color);
-	border-bottom: 1px solid #2e2c2c1a;
-	
-	padding-top: 22px;
-	padding-left:700px ; */
 
-	/* background: var(--bg-color);
-	border-bottom: 1px solid #1816161a;
-	padding: 12px 15%;
-	margin-right: -400px; */
 
 	.header.sticky{
 		background: var(--bg-color);
@@ -203,7 +179,7 @@ section{
 	gap: 1.5rem;
 }
 .about-img img{
-	max-width: 530px;
+	max-width: 400px;
 	height: auto;
 	width: 100%;
 	border-radius: 8px;
@@ -508,8 +484,9 @@ form textarea{
 	font-size: 16px;
 	background: var(--main-color);
 	color: var(--text-color);
-	width: 160px;
+	width: 180px;
 	transition: all .45s ease;
+	border-radius: 9px;
 }
 .contact-form .submit:hover{
 	transform: scale(1.1);
@@ -539,7 +516,6 @@ form textarea{
 }
 
 
-
 @media (max-width: 1480px){
 	header{
 		padding: 12px 2.5%;
@@ -552,7 +528,9 @@ form textarea{
 	section{
 		padding: 110px 3% 60px;
 	}
-
+	.end{
+		padding: 15px 3%;
+	}
 }
 
 @media (max-width: 1100px){
@@ -594,7 +572,7 @@ form textarea{
 	}
 	.navlist{
 		position: absolute;
-		top: -1000;
+		top: -1000px;
 		right: 0;
 		left: 0;
 		display: flex;
@@ -602,7 +580,6 @@ form textarea{
 		background: var(--bg-color);
 		text-align: left;
 		transition: all .45s ease;
-		display: none;
 	}
 	.navlist a{
 		display: block;
@@ -619,17 +596,5 @@ form textarea{
 	}
 	.navlist.open{
 		top: 100%;
-		
 	}
 }
-@media (max-width:373px){
-	.container{
-		width: 373;
-	}
-}
-
-
-
-
-
-
